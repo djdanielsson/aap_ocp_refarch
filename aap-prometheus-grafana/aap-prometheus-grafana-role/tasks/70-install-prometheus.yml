@@ -1,5 +1,0 @@
----
-- name: Create prometheus.yaml file
-  kubernetes.core.k8s:
-    state: present
-    template: "prometheus.yaml.j2"
