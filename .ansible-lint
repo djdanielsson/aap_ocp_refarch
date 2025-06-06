@@ -28,7 +28,7 @@ parseable: true
 #   - ansible.controller.ad_hoc_command
 
 mock_roles:
-  - aap.monitor.prometheus-grafana
+  - aap.monitor.prometheus_grafana
 
 # Enable checking of loop variable prefixes in roles
 # loop_var_prefix: ^(__|{role}_)

@@ -6,5 +6,5 @@
     - community.general
     - ansible.utils
   roles:
-    - aap.monitor.prometheus-grafana
+    - aap.monitor.prometheus_grafana
 ...
