@@ -1,0 +1,29 @@
+---
+# tasks file for aap-prometheus-grafana-role
+- name: Include tasks from 10-create-bearer-token
+  ansible.builtin.include_tasks: 10-create-bearer-token.yml
+- name: Include tasks from 20-install-prometheus-operator
+  ansible.builtin.include_tasks: 20-install-prometheus-operator.yml
+- name: Include tasks from 30-create-bearer-token-secret
+  ansible.builtin.include_tasks: 30-create-bearer-token-secret.yml
+- name: Include tasks from 40-create-controller-svc-label
+  ansible.builtin.include_tasks: 40-create-controller-svc-label.yml
+- name: Include tasks from 50-service-monitor
+  ansible.builtin.include_tasks: 50-service-monitor.yml
+- name: Include tasks from 60-service-account
+  ansible.builtin.include_tasks: 60-service-account.yml
+- name: Include tasks from 70-install-prometheus
+  ansible.builtin.include_tasks: 70-install-prometheus.yml
+- name: Include tasks from 80-expose-prometheus-operated-svc
+  ansible.builtin.include_tasks: 80-expose-prometheus-operated-svc.yml
+- name: Include tasks from 90-install-grafana-operator
+  ansible.builtin.include_tasks: 90-install-grafana-operator.yml
+- name: Include tasks from 100-grafana-datasources
+  ansible.builtin.include_tasks: 100-grafana-datasources.yml
+- name: Include tasks from 110-grafana-instance
+  ansible.builtin.include_tasks: 110-grafana-instance.yml
+- name: Include tasks from 120-grafana-dashboard
+  ansible.builtin.include_tasks: 120-grafana-dashboard.yml
+- name: Include tasks from 130-print-routes-passwords
+  ansible.builtin.include_tasks: 130-print-routes-passwords.yml
+...

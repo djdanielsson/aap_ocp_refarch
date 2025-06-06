@@ -12,6 +12,7 @@ spec:
         timeInterval: 5s
       name: Prometheus
       type: prometheus
-      url: 'http://prometheus-operated:9090'
+      url: "http://prometheus-operated:9090"
       version: 1
   name: grafana-datasources.yaml
+...

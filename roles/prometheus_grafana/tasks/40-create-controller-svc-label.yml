@@ -1,6 +1,6 @@
 ---
 # Assumption svc name is controllername-service
-- name: Create the monitor metrics label
+- name: 40-create-controller-svc-label | Create the monitor metrics label
   kubernetes.core.k8s:
     state: present
     definition:

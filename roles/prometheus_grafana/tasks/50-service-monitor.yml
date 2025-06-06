@@ -1,5 +1,5 @@
 ---
-- name: Create service-monitor.yaml file
+- name: 50-service-monitor | Create service-monitor.yaml file
   kubernetes.core.k8s:
     state: present
     template: "service-monitor.yaml.j2"
