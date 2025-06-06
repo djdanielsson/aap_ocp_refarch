@@ -1,3 +1,4 @@
+---
 apiVersion: integreatly.org/v1alpha1
 kind: GrafanaDashboard
 metadata:
@@ -977,3 +978,4 @@ spec:
       "version": 4429
     }
   name: aap-dashboard.json
+...

@@ -1,10 +1,10 @@
 ---
-- name: Install the Grafana instance
+- name: 110-grafana-instance | Install the Grafana instance
   kubernetes.core.k8s:
     state: present
     template: "grafana.yaml.j2"
 
-- name: Wait for Grafana instance to deploy
+- name: 110-grafana-instance | Wait for Grafana instance to deploy
   kubernetes.core.k8s_info:
     kind: Deployment
     namespace: "{{ prometheus_namespace }}"
@@ -12,5 +12,5 @@
     wait: true
     wait_condition:
       type: Available
-      status: True
+      status: true
 ...

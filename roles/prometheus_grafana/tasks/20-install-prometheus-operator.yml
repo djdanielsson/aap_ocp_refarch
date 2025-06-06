@@ -1,17 +1,17 @@
 ---
-- name: Create the prometheus-operator namespace
+- name: 20-install-prometheus-operator | Create the prometheus-operator namespace
   kubernetes.core.k8s:
     name: "{{ prometheus_namespace }}"
     api_version: v1
     kind: Namespace
     state: present
 
-- name: Install Prometheus Operator
+- name: 20-install-prometheus-operator | Install Prometheus Operator
   kubernetes.core.k8s:
     state: present
     template: "prometheus-operator.yaml.j2"
 
-- name: Wait for Prometheus Operator to deploy
+- name: 20-install-prometheus-operator | Wait for Prometheus Operator to deploy
   kubernetes.core.k8s_info:
     kind: Deployment
     namespace: "{{ prometheus_namespace }}"
@@ -19,5 +19,5 @@
     wait: true
     wait_condition:
       type: Available
-      status: True
+      status: true
 ...

@@ -1,5 +1,5 @@
 ---
-- name: Create prometheus.yaml file
+- name: 70-install-prometheus | Create prometheus.yaml file
   kubernetes.core.k8s:
     state: present
     template: "prometheus.yaml.j2"

@@ -15,6 +15,7 @@ if TYPE_CHECKING:
 
 
 DOCUMENTATION = """
+---
     name: sample_filter
     author: Your Name
     version_added: "1.0.0"
@@ -25,6 +26,7 @@ DOCUMENTATION = """
       name:
         description: Value specified here is appended to the Hello message.
         type: str
+...
 """
 
 EXAMPLES = """
